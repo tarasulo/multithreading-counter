@@ -1,3 +1,5 @@
+package Counter;
+
 public class ThreadA extends Thread {
     private Counter counter;
 
@@ -8,7 +10,7 @@ public class ThreadA extends Thread {
     @Override
     public void run() {
         while (counter.getCount() < 100) {
-            System.out.println("ThreadA " + counter.count());
+            System.out.println("Counter.ThreadA " + counter.count());
         }
     }
 }

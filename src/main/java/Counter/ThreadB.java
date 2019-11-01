@@ -1,3 +1,5 @@
+package Counter;
+
 public class ThreadB implements Runnable {
     private Counter counter;
 
@@ -8,7 +10,7 @@ public class ThreadB implements Runnable {
     @Override
     public void run() {
         while (counter.getCount() < 100) {
-            System.out.println("ThreadB " + counter.count());
+            System.out.println("Counter.ThreadB " + counter.count());
         }
     }
 }
