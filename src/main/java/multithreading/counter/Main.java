@@ -1,4 +1,4 @@
-package Counter;
+package multithreading.counter;
 
 public class Main {
     public static void main(String[] args) {

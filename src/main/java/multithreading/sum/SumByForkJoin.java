@@ -1,18 +1,22 @@
-package Sum;
+package multithreading.sum;
 
 import java.util.List;
-import java.util.concurrent.Callable;
+import java.util.concurrent.RecursiveTask;
 
-public class SumByExecutor implements Callable<Integer> {
+public class SumByForkJoin extends RecursiveTask<Integer> {
     private List<Integer> numbers;
     private int sum = 0;
 
-    public SumByExecutor(List<Integer> numbers) {
+    public SumByForkJoin(List<Integer> numbers) {
         this.numbers = numbers;
     }
 
+    public SumByForkJoin() {
+
+    }
+
     @Override
-    public Integer call() throws Exception {
+    protected Integer compute() {
         System.out.println(Thread.currentThread().getName());
         for (Integer number : numbers) {
             sum += number;
