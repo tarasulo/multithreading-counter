@@ -1,4 +1,4 @@
-package Sum;
+package multithreading.sum;
 
 import java.util.ArrayList;
 import java.util.List;

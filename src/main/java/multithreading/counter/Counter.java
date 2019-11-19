@@ -1,4 +1,4 @@
-package Counter;
+package multithreading.counter;
 
 public class Counter {
     private int counter = 0;

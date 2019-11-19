@@ -1,4 +1,4 @@
-package Counter;
+package multithreading.counter;
 
 public class ThreadB implements Runnable {
     private Counter counter;

@@ -1,4 +1,4 @@
-package Counter;
+package multithreading.counter;
 
 public class ThreadA extends Thread {
     private Counter counter;
